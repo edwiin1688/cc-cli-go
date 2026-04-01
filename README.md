@@ -5,7 +5,7 @@ A Go implementation of Claude Code CLI for learning purposes. This project imple
 ## Project Location
 
 ```
-/Users/liao-eli/github/cc-cli/cc-cli-go/
+/Users/liao-eli/github/cc-cli-go
 ```
 
 ## Features
@@ -84,7 +84,7 @@ cc-cli-go/
 ### Clone the Repository
 
 ```bash
-cd /Users/liao-eli/github/cc-cli
+cd /Users/liao-eli/github
 git clone <repository-url> cc-cli-go
 cd cc-cli-go
 ```

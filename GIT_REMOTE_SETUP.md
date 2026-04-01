@@ -23,7 +23,7 @@
 
 ```bash
 # 進入專案目錄
-cd /Users/liao-eli/github/cc-cli/cc-cli-go
+cd /Users/liao-eli/github/cc-cli-go
 
 # 設定 remote（替換成您的 URL）
 git remote add origin https://github.com/YOUR_USERNAME/cc-cli-go.git
