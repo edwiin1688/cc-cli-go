@@ -1,4 +1,4 @@
-module github.com/liao-eli/cc-cli/claude-code-go
+module github.com/liao-eli/cc-cli/cc-cli-go
 
 go 1.25.0
 

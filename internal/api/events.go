@@ -3,7 +3,7 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/liao-eli/cc-cli/claude-code-go/internal/types"
+	"github.com/liao-eli/cc-cli/cc-cli-go/internal/types"
 )
 
 type MessageStartEvent struct {
