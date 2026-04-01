@@ -3,7 +3,7 @@ package tools
 import (
 	"context"
 
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/types"
+	"github.com/liao-eli/cc-cli-go/internal/types"
 )
 
 type ToolResult struct {

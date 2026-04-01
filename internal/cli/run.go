@@ -7,13 +7,13 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"
 
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/api"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/query"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools/bash"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools/edit"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools/read"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tui"
+	"github.com/liao-eli/cc-cli-go/internal/api"
+	"github.com/liao-eli/cc-cli-go/internal/query"
+	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/liao-eli/cc-cli-go/internal/tools/bash"
+	"github.com/liao-eli/cc-cli-go/internal/tools/edit"
+	"github.com/liao-eli/cc-cli-go/internal/tools/read"
+	"github.com/liao-eli/cc-cli-go/internal/tui"
 )
 
 var runCmd = &cobra.Command{

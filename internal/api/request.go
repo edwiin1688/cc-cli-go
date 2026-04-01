@@ -1,6 +1,6 @@
 package api
 
-import "github.com/liao-eli/cc-cli/cc-cli-go/internal/types"
+import "github.com/liao-eli/cc-cli-go/internal/types"
 
 type Request struct {
 	Model     string         `json:"model"`

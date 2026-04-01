@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"sync"
 
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/api"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/types"
+	"github.com/liao-eli/cc-cli-go/internal/api"
+	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/liao-eli/cc-cli-go/internal/types"
 )
 
 type Engine struct {

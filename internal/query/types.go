@@ -1,8 +1,8 @@
 package query
 
 import (
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools"
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/types"
+	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/liao-eli/cc-cli-go/internal/types"
 )
 
 type QueryParams struct {

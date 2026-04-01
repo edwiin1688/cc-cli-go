@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/liao-eli/cc-cli/cc-cli-go/internal/tools"
+	"github.com/liao-eli/cc-cli-go/internal/tools"
 )
 
 type BashTool struct{}
