@@ -103,14 +103,13 @@
 
 #### Input Handling輸入處理
 
-- [ ] **Input Handling /輸入處理**
+- [x] **Input Handling /輸入處理** ✅
   - 功能: Enhanced input controls / 增強輸入控制
-  - 預估工時 / Est. Hours: 3-4h
-  - 位置: `internal/tui/input.go`
+  - 實作位置: `internal/tui/input.go`
   - 子任務 / Subtasks:
-    - [ ] Multi-line input / 多行輸入
-    - [ ] History navigation (up/down keys) / 歷史導航
-    - [ ] Paste handling / 貼上處理
+    - [x] Multi-line input / 多行輸入
+    - [x] History navigation (up/down keys) / 歷史導航
+    - [x] Paste handling / 貼上處理
 
 - [x] **Keyboard Shortcuts / 鍵盤快捷鍵**
   - 功能: Essential keyboard controls / 基本鍵盤控制
@@ -175,21 +174,21 @@
 
 #### Quality Assurance 品質保證
 
-- [ ] **Comprehensive Test Suite / 完整測試套件**
+- [x] **Comprehensive Test Suite / 完整測試套件** ✅
   - 功能: Unit and integration tests / 單元與整合測試
-  - 預估工時 / Est. Hours: 6-8h
+  - 實作位置: `internal/**/*_test.go`, `tests/integration/`
   - 子任務 / Subtasks:
-    - [ ] Tool tests / 工具測試
-    - [ ] API client tests / API 客戶端測試
-    - [ ] Query engine tests / 查詢引擎測試
+    - [x] Tool tests / 工具測試 (62 tests)
+    - [x] API client tests / API 客戶端測試 (11 tests)
+    - [x] Integration tests / 整合測試 (6 tests)
 
-- [ ] **Improved Error Handling / 增強錯誤處理**
-  - 功能: Better error messages and recovery /更好的錯誤訊息與恢復
-  - 預估工時 / Est. Hours: 2-3h
+- [x] **Improved Error Handling / 增強錯誤處理** ✅
+  - 功能: Better error messages and recovery / 錯誤訊息與恢復
+  - 實作位置: `internal/errors/`
   - 子任務 / Subtasks:
-    - [ ] API error handling / API 錯誤處理
-    - [ ] Tool error handling / 工具錯誤處理
-    - [ ] User-friendly error messages / 使用者友善錯誤訊息
+    - [x] API error handling / API 錯誤處理
+    - [x] Tool error handling / 工具錯誤處理
+    - [x] User-friendly error messages / 使用者友善錯誤訊息
 
 ---
 

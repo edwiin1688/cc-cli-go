@@ -148,66 +148,66 @@ tests/
 
 #### Tools 工具測試
 
-- [ ] **Write Tool Tests**
-  - [ ] Test successful file creation
-  - [ ] Test file already exists error
-  - [ ] Test parent directory creation
-  - [ ] Test permission denied error
-  - [ ] Test empty file path error
+- [x] **Write Tool Tests**
+  - [x] Test successful file creation
+  - [x] Test file already exists error
+  - [x] Test parent directory creation
+  - [x] Test permission denied error
+  - [x] Test empty file path error
 
-- [ ] **Glob Tool Tests**
-  - [ ] Test pattern matching with wildcard
-  - [ ] Test pattern matching with double star
-  - [ ] Test empty pattern error
-  - [ ] Test directory not found error
-  - [ ] Test result sorting
+- [x] **Glob Tool Tests**
+  - [x] Test pattern matching with wildcard
+  - [x] Test pattern matching with double star
+  - [x] Test empty pattern error
+  - [x] Test directory not found error
+  - [x] Test result sorting
 
-- [ ] **Grep Tool Tests**
-  - [ ] Test regex pattern matching
-  - [ ] Test file type filtering
-  - [ ] Test empty pattern error
-  - [ ] Test invalid regex error
-  - [ ] Test result formatting
-  - [ ] Test large file handling
+- [x] **Grep Tool Tests**
+  - [x] Test regex pattern matching
+  - [x] Test file type filtering
+  - [x] Test empty pattern error
+  - [x] Test invalid regex error
+  - [x] Test result formatting
+  - [x] Test large file handling
 
-- [ ] **Read Tool Tests**
-  - [ ] Test file reading with line numbers
-  - [ ] Test offset and limit parameters
-  - [ ] Test file not found error
-  - [ ] Test empty file handling
+- [x] **Read Tool Tests**
+  - [x] Test file reading with line numbers
+  - [x] Test offset and limit parameters
+  - [x] Test file not found error
+  - [x] Test empty file handling
 
-- [ ] **Edit Tool Tests**
-  - [ ] Test successful edit
-  - [ ] Test old_string not found error
-  - [ ] Test multiple matches error
-  - [ ] Test exact string matching
+- [x] **Edit Tool Tests**
+  - [x] Test successful edit
+  - [x] Test old_string not found error
+  - [x] Test multiple matches error
+  - [x] Test exact string matching
 
 #### Permission System 權限系統測試
 
-- [ ] **Permission Checker Tests**
-  - [ ] Test default mode behavior
-  - [ ] Test accept mode behavior
-  - [ ] Test plan mode behavior
-  - [ ] Test auto mode behavior
-  - [ ] Test rule matching
-  - [ ] Test pattern matching
+- [x] **Permission Checker Tests**
+  - [x] Test default mode behavior
+  - [x] Test accept mode behavior
+  - [x] Test plan mode behavior
+  - [x] Test auto mode behavior
+  - [x] Test rule matching
+  - [x] Test pattern matching
 
-- [ ] **Dangerous Command Detection Tests**
-  - [ ] Test rm -rf detection
-  - [ ] Test DROP TABLE detection
-  - [ ] Test git push --force detection
-  - [ ] Test safe command handling
-  - [ ] Test all dangerous patterns
+- [x] **Dangerous Command Detection Tests**
+  - [x] Test rm -rf detection
+  - [x] Test DROP TABLE detection
+  - [x] Test git push --force detection
+  - [x] Test safe command handling
+  - [x] Test all dangerous patterns
 
 #### Session Storage 會話儲存測試
 
-- [ ] **Session Tests**
-  - [ ] Test session creation
-  - [ ] Test session save/load
-  - [ ] Test message addition
-  - [ ] Test session cleanup
-  - [ ] Test resume functionality
-  - [ ] Test JSONL format validation
+- [x] **Session Tests**
+  - [x] Test session creation
+  - [x] Test session save/load
+  - [x] Test message addition
+  - [x] Test session cleanup
+  - [x] Test resume functionality
+  - [x] Test JSONL format validation
 
 ---
 
@@ -215,25 +215,25 @@ tests/
 
 #### Context Building 環境建構測試
 
-- [ ] **Context Tests**
-  - [ ] Test Git branch detection
-  - [ ] Test Git status detection
-  - [ ] Test working directory detection
-  - [ ] Test system prompt generation
+- [x] **Context Tests**
+  - [x] Test Git branch detection
+  - [x] Test Git status detection
+  - [x] Test working directory detection
+  - [x] Test system prompt generation
 
-- [ ] **CLAUDE.md Discovery Tests**
-  - [ ] Test upward directory search
-  - [ ] Test CLAUDE.md loading
-  - [ ] Test GEMINI.md loading
-  - [ ] Test multiple file merging
+- [x] **CLAUDE.md Discovery Tests**
+  - [x] Test upward directory search
+  - [x] Test CLAUDE.md loading
+  - [x] Test GEMINI.md loading
+  - [x] Test multiple file merging
 
 #### API Client 測試
 
-- [ ] **API Client Tests**
-  - [ ] Test streaming request (using mock)
-  - [ ] Test error handling
-  - [ ] Test request building
-  - [ ] Test response parsing
+- [x] **API Client Tests**
+  - [x] Test streaming request (using mock)
+  - [x] Test error handling
+  - [x] Test request building
+  - [x] Test response parsing
 
 ---
 
@@ -241,22 +241,22 @@ tests/
 
 #### TUI Components 測試
 
-- [ ] **TUI Model Tests**
-  - [ ] Test input handling
-  - [ ] Test message rendering
-  - [ ] Test keyboard shortcuts
+- [x] **TUI Model Tests**
+  - [x] Test input handling
+  - [x] Test message rendering
+  - [x] Test keyboard shortcuts
 
-- [ ] **Permission Dialog Tests**
-  - [ ] Test dialog rendering
-  - [ ] Test button selection
-  - [ ] Test decision handling
+- [x] **Permission Dialog Tests**
+  - [x] Test dialog rendering
+  - [x] Test button selection
+  - [x] Test decision handling
 
 #### Integration Tests 整合測試
 
-- [ ] **Integration Tests**
-  - [ ] Test full conversation flow
-  - [ ] Test tool execution with permission
-  - [ ] Test session persistence flow
+- [x] **Integration Tests**
+  - [x] Test full conversation flow
+  - [x] Test tool execution with permission
+  - [x] Test session persistence flow
 
 ---
 
