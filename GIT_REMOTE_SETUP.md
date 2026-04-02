@@ -16,6 +16,7 @@
 ### 步驟 2：複製 Repository URL
 
 建立後，GitHub 會顯示 URL，例如：
+
 - HTTPS: `https://github.com/your-username/cc-cli-go.git`
 - SSH: `git@github.com:your-username/cc-cli-go.git`
 
@@ -23,7 +24,7 @@
 
 ```bash
 # 進入專案目錄
-cd /Users/liao-eli/github/cc-cli-go
+cd /Users/user-name/github/cc-cli-go
 
 # 設定 remote（替換成您的 URL）
 git remote add origin https://github.com/YOUR_USERNAME/cc-cli-go.git
@@ -54,11 +55,13 @@ git push -u origin master
 ## HTTPS vs SSH
 
 ### HTTPS（推薦給初學者）
+
 - URL 格式: `https://github.com/username/repo.git`
 - 每次推送需要輸入 GitHub 帳號密碼
 - 或設定 Personal Access Token
 
 ### SSH（推薦給進階使用者）
+
 - URL 格式: `git@github.com:username/repo.git`
 - 需要先設定 SSH key
 - 設定後不用輸入密碼
@@ -92,6 +95,7 @@ git pull origin master
 ## 需要幫忙？
 
 如果您：
+
 1. 需要我幫您建立 GitHub repository（我可以用 gh CLI）
 2. 已有 repository URL，需要我幫您設定 remote
 3. 需要設定 SSH key

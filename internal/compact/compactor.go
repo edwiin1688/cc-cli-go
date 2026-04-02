@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/liao-eli/cc-cli-go/internal/types"
+	"github.com/user-name/cc-cli-go/internal/types"
 )
 
 // Compactor manages conversation compaction to stay within token limits.

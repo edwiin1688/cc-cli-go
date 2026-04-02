@@ -7,7 +7,7 @@
 **Project Location / 專案位置**:
 
 ```
-/Users/liao-eli/github/cc-cli-go
+/Users/user-name/github/cc-cli-go
 ```
 
 ---
@@ -30,13 +30,13 @@
 
 ### Technical Highlights / 技術亮點
 
-| Feature / 功能 | Description / 描述 |
-|----------------|-------------------|
-| **Idiomatic Go / Go 慣用寫法** | Follows Go best practices and conventions /遵循 Go 最佳實踐與慣例 |
-| **Channel-based Streaming / Channel 串流** | Uses Go channels instead of generators / 使用 Go channel 而非 generator |
-| **Interface-based Design / Interface 設計** | Tool system is easily extensible / 工具系統易於擴展 |
-| **Concurrent Execution /並行執行** | Parallel tool execution with goroutines + WaitGroup / 使用 goroutine + WaitGroup並行執行工具 |
-| **Single Binary /單一二進位檔** | No runtime dependencies /無執行時依賴 |
+| Feature / 功能                              | Description / 描述                                                                           |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Idiomatic Go / Go 慣用寫法**              | Follows Go best practices and conventions /遵循 Go 最佳實踐與慣例                            |
+| **Channel-based Streaming / Channel 串流**  | Uses Go channels instead of generators / 使用 Go channel 而非 generator                      |
+| **Interface-based Design / Interface 設計** | Tool system is easily extensible / 工具系統易於擴展                                          |
+| **Concurrent Execution /並行執行**          | Parallel tool execution with goroutines + WaitGroup / 使用 goroutine + WaitGroup並行執行工具 |
+| **Single Binary /單一二進位檔**             | No runtime dependencies /無執行時依賴                                                        |
 
 ---
 
@@ -99,7 +99,7 @@ cc-cli-go/
 ### Clone the Repository / 克隆儲存庫
 
 ```bash
-cd /Users/liao-eli/github
+cd /Users/user-name/github
 git clone <repository-url> cc-cli-go
 cd cc-cli-go
 ```
@@ -185,15 +185,17 @@ go test ./internal/tools/bash
 ### Manual Testing / 手動測試
 
 1. **Test Version Command / 測試版本命令**
+
    ```bash
    ./bin/cc-cli-go --version
    ```
 
 2. **Test Interactive Mode / 測試互動模式**
+
    ```bash
    ANTHROPIC_API_KEY=your-key ./bin/cc-cli-go run
    ```
-   
+
    - Type a message and press Enter /輸入訊息並按 Enter
    - Watch the streaming response / 觀看串流回應
    - Press Ctrl+C to exit / 按 Ctrl+C 退出
@@ -209,12 +211,12 @@ go test ./internal/tools/bash
 
 ### Project Statistics /專案統計
 
-| Item / 項目 | Value /數值 |
-|-------------|------------|
-| **Total Files /總檔案數** | 22 Go source files / Go 源碼檔案 |
-| **Total Lines /總行數** | ~1,500+ LOC |
-| **Packages /套件數** | 8 internal packages /內部套件 |
-| **Dependencies /依賴** | cobra (CLI), bubbletea (TUI), bubbles, lipgloss, uuid |
+| Item / 項目               | Value /數值                                           |
+| ------------------------- | ----------------------------------------------------- |
+| **Total Files /總檔案數** | 22 Go source files / Go 源碼檔案                      |
+| **Total Lines /總行數**   | ~1,500+ LOC                                           |
+| **Packages /套件數**      | 8 internal packages /內部套件                         |
+| **Dependencies /依賴**    | cobra (CLI), bubbletea (TUI), bubbles, lipgloss, uuid |
 
 ### Architecture /架構
 
@@ -307,11 +309,11 @@ export ANTHROPIC_API_KEY="sk-ant-api03-..."
 
 ### Runtime Errors / 執行時錯誤
 
-| Error / 錯誤 | Solution / 解決方案 |
-|-------------|---------------------|
-| **"ANTHROPIC_API_KEY environment variable is required"** | Set your API key / 設定您的 API 金鑰 |
-| **Connection errors /連接錯誤** | Check network connectivity / 檢查網路連接 |
-| **Rate limiting /速率限制** | Wait and retry with exponential backoff / 等待並以指数退避重試 |
+| Error / 錯誤                                             | Solution / 解決方案                                            |
+| -------------------------------------------------------- | -------------------------------------------------------------- |
+| **"ANTHROPIC_API_KEY environment variable is required"** | Set your API key / 設定您的 API 金鑰                           |
+| **Connection errors /連接錯誤**                          | Check network connectivity / 檢查網路連接                      |
+| **Rate limiting /速率限制**                              | Wait and retry with exponential backoff / 等待並以指数退避重試 |
 
 ---
 
@@ -341,14 +343,14 @@ This project is for learning purposes. See LICENSE file for details. / 本專案
 
 ## Version History / 版本歷史
 
-| Version / 版本 | Date / 日期 | Features / 功能 |
-|----------------|-------------|----------------|
-| **v0.1.0** | 2026-04-01 | Initial release with core features / 初版發布，含核心功能 |
-| | | • Basic CLI structure / 基本 CLI 結構 |
-| | | • API streaming client / API 串流客戶端 |
-| | | • Tool system (Bash, Read, Edit) / 工具系統（Bash、Read、Edit）|
-| | | • Query engine / 查詢引擎 |
-| | | • Basic TUI / 基本 TUI |
+| Version / 版本 | Date / 日期 | Features / 功能                                                 |
+| -------------- | ----------- | --------------------------------------------------------------- |
+| **v0.1.0**     | 2026-04-01  | Initial release with core features / 初版發布，含核心功能       |
+|                |             | • Basic CLI structure / 基本 CLI 結構                           |
+|                |             | • API streaming client / API 串流客戶端                         |
+|                |             | • Tool system (Bash, Read, Edit) / 工具系統（Bash、Read、Edit） |
+|                |             | • Query engine / 查詢引擎                                       |
+|                |             | • Basic TUI / 基本 TUI                                          |
 
 ---
 

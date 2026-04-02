@@ -6,7 +6,7 @@ package tools
 import (
 	"context"
 
-	"github.com/liao-eli/cc-cli-go/internal/types"
+	"github.com/user-name/cc-cli-go/internal/types"
 )
 
 // ToolResult represents the result of a tool execution.

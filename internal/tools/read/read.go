@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/user-name/cc-cli-go/internal/tools"
 )
 
 type ReadTool struct{}

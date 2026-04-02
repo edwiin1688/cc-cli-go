@@ -3,7 +3,7 @@ package permission
 import (
 	"testing"
 
-	"github.com/liao-eli/cc-cli-go/internal/testutil"
+	"github.com/user-name/cc-cli-go/internal/testutil"
 )
 
 func TestChecker_Check_DefaultMode_AllowReadTool(t *testing.T) {

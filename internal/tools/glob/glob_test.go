@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/liao-eli/cc-cli-go/internal/testutil"
-	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/user-name/cc-cli-go/internal/testutil"
+	"github.com/user-name/cc-cli-go/internal/tools"
 )
 
 func TestGlobTool_Name(t *testing.T) {

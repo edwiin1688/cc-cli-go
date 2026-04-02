@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/liao-eli/cc-cli-go/internal/permission"
+	"github.com/user-name/cc-cli-go/internal/permission"
 )
 
 type ValidationError struct {

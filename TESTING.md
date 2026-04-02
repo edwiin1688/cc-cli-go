@@ -41,14 +41,14 @@
 
 ### 測試覆蓋率目標 / Coverage Goals
 
-| 模組 / Module | 目標覆蓋率 / Target Coverage | 優先級 / Priority |
-|--------------|---------------------------|-----------------|
-| Tools（Write/Glob/Grep） | ≥ 80% | P0 |
-| Permission System | ≥ 85% | P0 |
-| Session Storage | ≥ 75% | P0 |
-| Context Building | ≥ 70% | P1 |
-| API Client | ≥ 60% (使用 mock) | P1 |
-| TUI Components | ≥ 50% | P2 |
+| 模組 / Module            | 目標覆蓋率 / Target Coverage | 優先級 / Priority |
+| ------------------------ | ---------------------------- | ----------------- |
+| Tools（Write/Glob/Grep） | ≥ 80%                        | P0                |
+| Permission System        | ≥ 85%                        | P0                |
+| Session Storage          | ≥ 75%                        | P0                |
+| Context Building         | ≥ 70%                        | P1                |
+| API Client               | ≥ 60% (使用 mock)            | P1                |
+| TUI Components           | ≥ 50%                        | P2                |
 
 ---
 
@@ -274,7 +274,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/user-name/cc-cli-go/internal/tools"
 )
 
 func TestWriteTool_Execute_Success(t *testing.T) {
@@ -646,9 +646,9 @@ func TestWithCleanup(t *testing.T) {
 ### 覆蓋率報告
 
 ```
-github.com/liao-eli/cc-cli-go/internal/tools/write/write.go      80.5%
-github.com/liao-eli/cc-cli-go/internal/permission/types.go        85.2%
-github.com/liao-eli/cc-cli-go/internal/session/session.go         75.8%
+github.com/user-name/cc-cli-go/internal/tools/write/write.go      80.5%
+github.com/user-name/cc-cli-go/internal/permission/types.go        85.2%
+github.com/user-name/cc-cli-go/internal/session/session.go         75.8%
 total:                                                            78.3%
 ```
 
@@ -660,7 +660,7 @@ total:                                                            78.3%
 === RUN   TestWriteTool_Execute_FileExists
 --- PASS: TestWriteTool_Execute_FileExists (0.01s)
 PASS
-ok      github.com/liao-eli/cc-cli-go/internal/tools/write    0.150s
+ok      github.com/user-name/cc-cli-go/internal/tools/write    0.150s
 ```
 
 ---
@@ -674,4 +674,4 @@ ok      github.com/liao-eli/cc-cli-go/internal/tools/write    0.150s
 
 ---
 
-*最後更新 / Last Updated: 2026-04-02*
+_最後更新 / Last Updated: 2026-04-02_

@@ -7,10 +7,10 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/liao-eli/cc-cli-go/internal/api"
-	"github.com/liao-eli/cc-cli-go/internal/permission"
-	"github.com/liao-eli/cc-cli-go/internal/query"
-	"github.com/liao-eli/cc-cli-go/internal/types"
+	"github.com/user-name/cc-cli-go/internal/api"
+	"github.com/user-name/cc-cli-go/internal/permission"
+	"github.com/user-name/cc-cli-go/internal/query"
+	"github.com/user-name/cc-cli-go/internal/types"
 )
 
 func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {

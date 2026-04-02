@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/liao-eli/cc-cli-go/internal/cli"
+	"github.com/user-name/cc-cli-go/internal/cli"
 )
 
 func main() {

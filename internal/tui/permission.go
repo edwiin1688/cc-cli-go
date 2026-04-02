@@ -7,7 +7,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/liao-eli/cc-cli-go/internal/permission"
+	"github.com/user-name/cc-cli-go/internal/permission"
 )
 
 type PermissionDialog struct {

@@ -1,4 +1,4 @@
-module github.com/liao-eli/cc-cli-go
+module github.com/user-name/cc-cli-go
 
 go 1.25.0
 

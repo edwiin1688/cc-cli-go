@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/liao-eli/cc-cli-go/internal/tools"
+	"github.com/user-name/cc-cli-go/internal/tools"
 )
 
 type EditTool struct{}
