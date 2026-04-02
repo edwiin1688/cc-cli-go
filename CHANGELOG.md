@@ -13,9 +13,14 @@
 
 - **TESTING.md**: 完整測試策略文件，包含測試原則、工具、範例與最佳實踐。
 - **testutil Package**: 測試輔助工具 package，提供常用斷言與檔案系統測試工具。
-- **Write Tool Tests**: Write Tool 完整單元測試（覆蓋率 81.8%）。
-- **Permission System Tests**: Permission System 完整單元測試（覆蓋率 90.9%）。
-- **Session Storage Tests**: Session Storage 完整單元測試（覆蓋率 88.0%）。
+- **Write Tool Tests**: Write Tool 完整單元測試（覆蓋率 81.8%，9 個測試案例）。
+- **Permission System Tests**: Permission System 完整單元測試（覆蓋率 90.9%，15 個測試案例）。
+- **Session Storage Tests**: Session Storage 完整單元測試（覆蓋率 88.0%，10 個測試案例）。
+- **Glob Tool Tests**: Glob Tool 完整單元測試（覆蓋率 84.1%，10 個測試案例）。
+- **Grep Tool Tests**: Grep Tool 完整單元測試（覆蓋率 80.0%，10 個測試案例）。
+- **Read Tool Tests**: Read Tool 完整單元測試（覆蓋率 80.0%，10 個測試案例）。
+- **Edit Tool Tests**: Edit Tool 完整單元測試（覆蓋率 89.3%，11 個測試案例）。
+- **Bash Tool Tests**: Bash Tool 完整單元測試（覆蓋率 93.9%，12 個測試案例）。
 
 #### 工具系統 / Tools
 
