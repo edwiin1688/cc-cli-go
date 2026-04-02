@@ -1,4 +1,4 @@
-# Technical Decisions (ADR) - Claude Code Go Port
+# Technical Decisions (ADR) - CC-CLI-Go
 
 > **Purpose**: Record key technical decisions for Go port
 
@@ -12,7 +12,7 @@ Accepted
 
 ### Context
 
-Need to choose a programming language for reimplementing Claude Code CLI as a learning project.
+Need to choose a programming language for reimplementing CC-CLI-Go as a learning project.
 
 Options considered:
 - TypeScript (original)

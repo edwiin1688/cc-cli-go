@@ -9,8 +9,8 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "claude-code",
-	Short: "Claude Code CLI - AI-powered coding assistant",
+	Use:   "cc-cli-go",
+	Short: "CC-CLI-Go - AI-powered coding assistant",
 	Long:  `A Go implementation of Claude Code CLI for learning purposes.`,
 }
 

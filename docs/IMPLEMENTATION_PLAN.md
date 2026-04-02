@@ -1,8 +1,8 @@
-# Implementation Plan - Claude Code Go Port
+# Implementation Plan - CC-CLI-Go
 
 > **For agentic workers**: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal**: Build a minimal but functional Claude Code CLI clone in Go for learning purposes.
+**Goal**: Build a minimal but functional CC-CLI-Go clone in Go for learning purposes.
 
 **Architecture**: Bubble Tea TUI + Channel-based streaming + Interface-based tool system.
 
@@ -22,8 +22,8 @@
 - [ ] **Step 1: Create go.mod**
 
 ```bash
-mkdir claude-code-go && cd claude-code-go
-go mod init github.com/yourusername/claude-code-go
+mkdir cc-cli-go-go && cd cc-cli-go-go
+go mod init github.com/yourusername/cc-cli-go-go
 ```
 
 - [ ] **Step 2: Add dependencies**
@@ -85,19 +85,19 @@ git commit -m "feat: initialize Go module with dependencies"
 ### Task 2: Create Basic CLI Entry Point
 
 **Files:**
-- Create: `cmd/claude-code/main.go`
+- Create: `cmd/cc-cli-go/main.go`
 - Create: `internal/cli/root.go`
 
 - [ ] **Step 1: Create main.go**
 
 ```go
-// cmd/claude-code/main.go
+// cmd/cc-cli-go/main.go
 package main
 
 import (
     "os"
     
-    "github.com/yourusername/claude-code-go/internal/cli"
+    "github.com/yourusername/cc-cli-go-go/internal/cli"
 )
 
 func main() {
@@ -125,9 +125,9 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-    Use:   "claude-code",
-    Short: "Claude Code CLI - AI-powered coding assistant",
-    Long:  `A Go implementation of Claude Code CLI for learning purposes.`,
+    Use:   "cc-cli-go",
+    Short: "CC-CLI-Go - AI-powered coding assistant",
+    Long:  `A Go implementation of CC-CLI-Go for learning purposes.`,
 }
 
 func Execute() error {
@@ -141,8 +141,8 @@ func init() {
 
 - [ ] **Step 3: Run and verify**
 
-Run: `go run ./cmd/claude-code --version`
-Expected: `claude-code version 0.1.0`
+Run: `go run ./cmd/cc-cli-go --version`
+Expected: `cc-cli-go version 0.1.0`
 
 - [ ] **Step 4: Commit**
 
@@ -401,7 +401,7 @@ git commit -m "feat: add API client structure"
 // internal/api/request.go
 package api
 
-import "github.com/yourusername/claude-code-go/internal/types"
+import "github.com/yourusername/cc-cli-go-go/internal/types"
 
 type Request struct {
     Model     string            `json:"model"`
@@ -583,7 +583,7 @@ package api
 import (
     "encoding/json"
     
-    "github.com/yourusername/claude-code-go/internal/types"
+    "github.com/yourusername/cc-cli-go-go/internal/types"
 )
 
 type MessageStartEvent struct {
@@ -686,7 +686,7 @@ package tools
 import (
     "context"
     
-    "github.com/yourusername/claude-code-go/internal/types"
+    "github.com/yourusername/cc-cli-go-go/internal/types"
 )
 
 type ToolResult struct {
@@ -804,7 +804,7 @@ import (
     "strings"
     "time"
     
-    "github.com/yourusername/claude-code-go/internal/tools"
+    "github.com/yourusername/cc-cli-go-go/internal/tools"
 )
 
 type BashTool struct{}
@@ -939,7 +939,7 @@ import (
     "os"
     "strings"
     
-    "github.com/yourusername/claude-code-go/internal/tools"
+    "github.com/yourusername/cc-cli-go-go/internal/tools"
 )
 
 type ReadTool struct{}
@@ -1093,7 +1093,7 @@ import (
     "os"
     "strings"
     
-    "github.com/yourusername/claude-code-go/internal/tools"
+    "github.com/yourusername/cc-cli-go-go/internal/tools"
 )
 
 type EditTool struct{}
@@ -1236,9 +1236,9 @@ git commit -m "feat: implement Edit tool"
 package query
 
 import (
-    "github.com/yourusername/claude-code-go/internal/api"
-    "github.com/yourusername/claude-code-go/internal/tools"
-    "github.com/yourusername/claude-code-go/internal/types"
+    "github.com/yourusername/cc-cli-go-go/internal/api"
+    "github.com/yourusername/cc-cli-go-go/internal/tools"
+    "github.com/yourusername/cc-cli-go-go/internal/types"
 )
 
 type QueryParams struct {
@@ -1274,8 +1274,8 @@ import (
     "encoding/json"
     "sync"
     
-    "github.com/yourusername/claude-code-go/internal/api"
-    "github.com/yourusername/claude-code-go/internal/tools"
+    "github.com/yourusername/cc-cli-go-go/internal/api"
+    "github.com/yourusername/cc-cli-go-go/internal/tools"
 )
 
 type Engine struct {
@@ -1462,7 +1462,7 @@ import (
     "github.com/charmbracelet/bubbles/spinner"
     tea "github.com/charmbracelet/bubbletea"
     
-    "github.com/yourusername/claude-code-go/internal/types"
+    "github.com/yourusername/cc-cli-go-go/internal/types"
 )
 
 type Model struct {
@@ -1787,13 +1787,13 @@ import (
     
     "github.com/spf13/cobra"
     
-    "github.com/yourusername/claude-code-go/internal/api"
-    "github.com/yourusername/claude-code-go/internal/query"
-    "github.com/yourusername/claude-code-go/internal/tools"
-    "github.com/yourusername/claude-code-go/internal/tools/bash"
-    "github.com/yourusername/claude-code-go/internal/tools/edit"
-    "github.com/yourusername/claude-code-go/internal/tools/read"
-    "github.com/yourusername/claude-code-go/internal/tui"
+    "github.com/yourusername/cc-cli-go-go/internal/api"
+    "github.com/yourusername/cc-cli-go-go/internal/query"
+    "github.com/yourusername/cc-cli-go-go/internal/tools"
+    "github.com/yourusername/cc-cli-go-go/internal/tools/bash"
+    "github.com/yourusername/cc-cli-go-go/internal/tools/edit"
+    "github.com/yourusername/cc-cli-go-go/internal/tools/read"
+    "github.com/yourusername/cc-cli-go-go/internal/tui"
 )
 
 var runCmd = &cobra.Command{
@@ -1835,7 +1835,7 @@ func runInteractive(cmd *cobra.Command, args []string) error {
 
 - [ ] **Step 3: Verify run command compiles**
 
-Run: `go build ./cmd/claude-code`
+Run: `go build ./cmd/cc-cli-go`
 Expected: No errors
 
 - [ ] **Step 4: Commit**
@@ -1852,20 +1852,20 @@ git commit -m "feat: wire all components together in run command"
 - [ ] **Step 1: Build binary**
 
 ```bash
-go build -o bin/claude-code ./cmd/claude-code
+go build -o bin/cc-cli-go ./cmd/cc-cli-go
 ```
 
 - [ ] **Step 2: Test version**
 
 ```bash
-./bin/claude-code --version
+./bin/cc-cli-go --version
 ```
 Expected: Shows version
 
 - [ ] **Step 3: Test interactive mode**
 
 ```bash
-ANTHROPIC_API_KEY=your-key ./bin/claude-code run
+ANTHROPIC_API_KEY=your-key ./bin/cc-cli-go run
 ```
 Expected: TUI starts, can send messages
 

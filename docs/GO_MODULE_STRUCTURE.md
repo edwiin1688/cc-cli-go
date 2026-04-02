@@ -1,4 +1,4 @@
-# Go Module Structure - Claude Code Go Port
+# Go Module Structure - CC-CLI-Go
 
 > **目的**: 定義完整的 Go module 目錄結構
 
@@ -7,9 +7,9 @@
 ## 目錄結構總覽
 
 ```
-claude-code-go/
+cc-cli-go-go/
 ├── cmd/                              # 應用程式入口點
-│   └── claude-code/
+│   └── cc-cli-go/
 │       └── main.go                   # 主程式入口
 │
 ├── internal/                         # 內部套件（不可被外部引用）
@@ -122,7 +122,7 @@ claude-code-go/
 ## 套件依賴關係圖
 
 ```
-cmd/claude-code
+cmd/cc-cli-go
     │
     └── internal/cli
             │
@@ -150,7 +150,7 @@ Key:
 
 ## 各套件詳細說明
 
-### cmd/claude-code/
+### cmd/cc-cli-go/
 
 **職責**: 應用程式入口點
 
@@ -205,9 +205,9 @@ events, _ := client.Stream(ctx, req)
 
 **使用範例**:
 ```bash
-claude-code run              # 互動模式
-claude-code -p "hello"       # 非互動模式
-claude-code --resume <uuid>  # 恢復會話
+cc-cli-go run              # 互動模式
+cc-cli-go -p "hello"       # 非互動模式
+cc-cli-go --resume <uuid>  # 恢復會話
 ```
 
 ---
@@ -411,7 +411,7 @@ model := settings.Model
 ## go.mod 範例
 
 ```go
-module github.com/yourusername/claude-code-go
+module github.com/yourusername/cc-cli-go-go
 
 go 1.21
 
@@ -435,7 +435,7 @@ VERSION := $(shell git describe --tags --always)
 LDFLAGS := -ldflags "-X main.version=$(VERSION)"
 
 build:
-	go build $(LDFLAGS) -o bin/claude-code ./cmd/claude-code
+	go build $(LDFLAGS) -o bin/cc-cli-go ./cmd/cc-cli-go
 
 test:
 	go test -v ./...
@@ -449,7 +449,7 @@ clean:
 	go clean
 
 install: build
-	cp bin/claude-code /usr/local/bin/
+	cp bin/cc-cli-go /usr/local/bin/
 
 lint:
 	golangci-lint run ./...
@@ -458,13 +458,13 @@ fmt:
 	go fmt ./...
 
 dev:
-	go run ./cmd/claude-code run
+	go run ./cmd/cc-cli-go run
 
 cross-build:
-	GOOS=darwin GOARCH=arm64 go build -o bin/claude-code-darwin-arm64 ./cmd/claude-code
-	GOOS=darwin GOARCH=amd64 go build -o bin/claude-code-darwin-amd64 ./cmd/claude-code
-	GOOS=linux GOARCH=amd64 go build -o bin/claude-code-linux-amd64 ./cmd/claude-code
-	GOOS=windows GOARCH=amd64 go build -o bin/claude-code-windows-amd64.exe ./cmd/claude-code
+	GOOS=darwin GOARCH=arm64 go build -o bin/cc-cli-go-darwin-arm64 ./cmd/cc-cli-go
+	GOOS=darwin GOARCH=amd64 go build -o bin/cc-cli-go-darwin-amd64 ./cmd/cc-cli-go
+	GOOS=linux GOARCH=amd64 go build -o bin/cc-cli-go-linux-amd64 ./cmd/cc-cli-go
+	GOOS=windows GOARCH=amd64 go build -o bin/cc-cli-go-windows-amd64.exe ./cmd/cc-cli-go
 ```
 
 ---
@@ -472,7 +472,7 @@ cross-build:
 ## 測試結構
 
 ```
-claude-code-go/
+cc-cli-go-go/
 ├── internal/
 │   ├── api/
 │   │   ├── client_test.go
@@ -556,7 +556,7 @@ docs/
 | `internal/context` | ~150-200 |
 | `internal/config` | ~150-200 |
 | `internal/types` | ~200-300 |
-| `cmd/claude-code` | ~50-100 |
+| `cmd/cc-cli-go` | ~50-100 |
 | **總計** | **~4000-5200 LOC** |
 
 ---

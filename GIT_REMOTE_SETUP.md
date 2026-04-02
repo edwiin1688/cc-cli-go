@@ -7,7 +7,7 @@
 1. 前往 https://github.com/new
 2. 填寫資訊：
    - Repository name: `cc-cli-go`
-   - Description: `Claude Code CLI - Go Implementation`
+   - Description: `CC-CLI-Go - Claude Code CLI Implementation`
    - 選擇 Public 或 Private
    - **不要勾選** "Add a README file"（我們已經有了）
    - **不要勾選** "Add .gitignore"（我們已經有了）

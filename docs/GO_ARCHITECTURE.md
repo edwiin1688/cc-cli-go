@@ -1,4 +1,4 @@
-# Go Architecture - Claude Code Go Port
+# Go Architecture - CC-CLI-Go
 
 > **目的**: 定義 Go 版本的架構設計
 
@@ -21,7 +21,7 @@
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                          CLI Entry                           │
-│                      (cmd/claude-code/main.go)               │
+│                      (cmd/cc-cli-go/main.go)               │
 └─────────────────────────────────────────────────────────────┘
                                │
                                ▼
@@ -343,9 +343,9 @@ type ContentDelta struct {
 ### 3.1 目錄結構
 
 ```
-claude-code-go/
+cc-cli-go-go/
 ├── cmd/
-│   └── claude-code/
+│   └── cc-cli-go/
 │       └── main.go              # Entry point
 │
 ├── internal/
@@ -436,7 +436,7 @@ claude-code-go/
 ### 3.2 Package 依賴關係
 
 ```
-cmd/claude-code
+cmd/cc-cli-go
     │
     ├── internal/cli
     │       │
@@ -1122,7 +1122,7 @@ VERSION := $(shell git describe --tags --always)
 LDFLAGS := -ldflags "-X main.version=$(VERSION)"
 
 build:
-	go build $(LDFLAGS) -o bin/claude-code ./cmd/claude-code
+	go build $(LDFLAGS) -o bin/cc-cli-go ./cmd/cc-cli-go
 
 test:
 	go test -v ./...
@@ -1135,17 +1135,17 @@ clean:
 	go clean
 
 install: build
-	cp bin/claude-code /usr/local/bin/
+	cp bin/cc-cli-go /usr/local/bin/
 ```
 
 ### 10.2 Cross-Compilation
 
 ```bash
 # Build for multiple platforms
-GOOS=darwin GOARCH=arm64 go build -o bin/claude-code-darwin-arm64 ./cmd/claude-code
-GOOS=darwin GOARCH=amd64 go build -o bin/claude-code-darwin-amd64 ./cmd/claude-code
-GOOS=linux GOARCH=amd64 go build -o bin/claude-code-linux-amd64 ./cmd/claude-code
-GOOS=windows GOARCH=amd64 go build -o bin/claude-code-windows-amd64.exe ./cmd/claude-code
+GOOS=darwin GOARCH=arm64 go build -o bin/cc-cli-go-darwin-arm64 ./cmd/cc-cli-go
+GOOS=darwin GOARCH=amd64 go build -o bin/cc-cli-go-darwin-amd64 ./cmd/cc-cli-go
+GOOS=linux GOARCH=amd64 go build -o bin/cc-cli-go-linux-amd64 ./cmd/cc-cli-go
+GOOS=windows GOARCH=amd64 go build -o bin/cc-cli-go-windows-amd64.exe ./cmd/cc-cli-go
 ```
 
 ---

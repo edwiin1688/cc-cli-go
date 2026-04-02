@@ -1,4 +1,4 @@
-# Claude Code CLI - Go Implementation / Claude Code CLI - Go 實作
+# CC-CLI-Go - Claude Code CLI Implementation / CC-CLI-Go - Claude Code CLI 實作
 
 > A Go implementation of Claude Code CLI for learning purposes. / 以 Go 實作的 Claude Code CLI 學習專案。
 >
@@ -45,7 +45,7 @@
 ```
 cc-cli-go/
 ├── cmd/
-│   └── claude-code/
+│   └── cc-cli-go/
 │       └── main.go              # Application entry point /應用程式入口
 ├── internal/
 │   ├── api/                     # Anthropic API client / API 客戶端
@@ -114,10 +114,10 @@ go mod download
 
 ```bash
 # Build binary / 建構二進位檔
-go build -o bin/cc-cli-go ./cmd/claude-code
+go build -o bin/cc-cli-go ./cmd/cc-cli-go
 
 # Or use go install / 或使用 go install
-go install ./cmd/claude-code
+go install ./cmd/cc-cli-go
 ```
 
 ---
@@ -137,14 +137,14 @@ export ANTHROPIC_API_KEY="your-api-key-here"
 ./bin/cc-cli-go run
 
 # Or using go run / 或使用 go run
-go run ./cmd/claude-code run
+go run ./cmd/cc-cli-go run
 ```
 
 ### Check Version / 檢查版本
 
 ```bash
 ./bin/cc-cli-go --version
-# Output /輸出: claude-code version 0.1.0
+# Output /輸出: cc-cli-go version 0.1.0
 ```
 
 ### Available Commands / 可用命令
@@ -294,7 +294,7 @@ go mod tidy
 go mod download
 
 # Rebuild / 重新建構
-go build -o bin/cc-cli-go ./cmd/claude-code
+go build -o bin/cc-cli-go ./cmd/cc-cli-go
 ```
 
 ### API Key Issues / API 金鑰問題

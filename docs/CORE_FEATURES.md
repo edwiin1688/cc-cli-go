@@ -1,4 +1,4 @@
-# Core Features - Claude Code Go Port
+# Core Features - CC-CLI-Go
 
 > **目的**: 定義 Go 版本需要實現的核心功能清單
 
