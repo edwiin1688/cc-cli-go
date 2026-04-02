@@ -116,18 +116,14 @@
 
 - [x] **Testing Framework / 測試框架** ✅
   - 功能: Testing strategy and implementation / 測試策略與實作
-  - 實作位置: `TESTING.md`, `internal/testutil/`
+  - 實作位置: `TESTING.md`, `internal/testutil/`, `tests/integration/`
   - 特性:
-    - Write Tool Tests (81.8% coverage, 9 tests)
-    - Permission System Tests (90.9% coverage, 15 tests)
-    - Session Storage Tests (88.0% coverage, 10 tests)
-    - Glob Tool Tests (84.1% coverage, 10 tests)
-    - Grep Tool Tests (80.0% coverage, 10 tests)
-    - Read Tool Tests (80.0% coverage, 10 tests)
-    - Edit Tool Tests (89.3% coverage, 11 tests)
-    - Bash Tool Tests (93.9% coverage, 12 tests)
-    - testutil package with helper functions
-    - Total: 87 test cases, all passing ✅
+    - **工具測試**: Write/Glob/Grep/Read/Edit/Bash (62 tests, avg 84.9% coverage)
+    - **系統測試**: Permission/Session/Context/API (50 tests, avg 79.7% coverage)
+    - **整合測試**: Tool execution + Permission system (6 tests)
+    - **Mock Client**: API Client mock for testing
+    - **testutil package**: Helper functions for assertions
+    - **總計**: 127 test cases, all passing ✅, avg 81.9% coverage
 
 #### Context Compaction 環境壓縮
 
