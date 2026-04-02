@@ -9,6 +9,12 @@
 
 ### 新增功能 / Added
 
+#### 文件 / Documentation
+
+- **README 文件索引**: 新增 `Documentation Index`，集中列出根目錄與 `docs/` 下所有 Markdown 文件連結與簡介。
+- **README 維護規則**: 新增 `Documentation Maintenance Rules`，規範 `.md` 異動時同步更新索引與核心文件一致性。
+- **TECH_DECISIONS 名詞解釋**: 新增 `名詞解釋 / Glossary` 章節，補充 ADR 相關術語與本專案實作對應。
+
 #### 錯誤處理 / Error Handling
 
 - **Unified Error Types**: 統一錯誤類型系統，支援 API/Tool/Permission/Config/Session/Internal 錯誤。

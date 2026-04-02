@@ -4,6 +4,32 @@
 
 ---
 
+## 名詞解釋 / Glossary
+
+| 名詞 | 說明 | 本專案實作方式 |
+|------|------|----------------|
+| ADR (Architecture Decision Record) | 架構決策紀錄，用來記錄「為什麼這樣設計」 | 每個 ADR 含 Context / Decision / Rationale / Consequences |
+| KISS | Keep It Simple, Stupid；優先簡單可維護方案 | 優先內建能力與少依賴，不先導入高複雜度架構 |
+| Bubble Tea | Go 的 TUI 框架（Elm-style） | 以 `Model -> Update -> View` 管理互動式 CLI |
+| Elm-style Architecture | 狀態與事件驅動 UI 架構 | 用 `tea.Msg` 驅動狀態變更，避免隱式副作用 |
+| Streaming | API 回應分段即時輸出 | 使用 SSE 讀取事件並轉為內部 stream event |
+| Channel-based Streaming | 用 Go channel 傳遞串流資料 | `Query()` 回傳 event channel + result channel |
+| Goroutine | Go 輕量執行緒 | 工具並行執行、串流處理均以 goroutine 實作 |
+| WaitGroup | 等待多個 goroutine 完成的同步機制 | 收斂多工具執行結果，確保流程在完成後再繼續 |
+| Mutex | 共享資料互斥鎖 | 並行工具寫入共享結果切片時保護資料一致性 |
+| Concurrency-safe Tool | 可安全並行執行的工具 | 標記可並行工具，否則退回串行執行 |
+| JSONL (JSON Lines) | 每行一筆 JSON 的儲存格式 | session transcript 採 append-only JSONL 寫入 |
+| Append-only | 只追加、不覆寫既有資料 | 對話記錄逐行追加，降低寫入複雜度 |
+| Schema Validation | 輸入資料格式與欄位驗證 | `struct tags` + `Validate()` 手動檢查必填與約束 |
+| Provider | LLM API 提供者（Anthropic/Bedrock/Vertex） | 目前只支援 Anthropic，避免多供應商複雜度 |
+| MCP | Model Context Protocol，外部工具/資源整合協議 | 目前不實作，保留未來擴展空間 |
+| System Prompt | 注入模型的系統層指令 | 組合環境資訊與規則後放入請求 |
+| Context Compaction | 壓縮對話上下文，降低 token 成本 | 超過閾值時摘要舊訊息，保留最近互動 |
+| Permission Mode | 工具執行權限策略模式 | `default/accept/plan/auto` 決定是否詢問使用者 |
+| errors.Is / errors.As | Go 錯誤鏈檢查與型別斷言 | 用於判斷取消、API 錯誤等可恢復情境 |
+
+---
+
 ## ADR-001: Language Selection
 
 ### Status

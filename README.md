@@ -87,6 +87,35 @@ cc-cli-go/
 
 ---
 
+## Documentation Index / 文件索引
+
+### Root Documents / 根目錄文件
+
+- [README.md](README.md) - Project overview, setup, usage, and development notes / 專案總覽、安裝、使用與開發說明
+- [CHANGELOG.md](CHANGELOG.md) - Version history and notable changes / 版本歷史與重要變更
+- [TODO.md](TODO.md) - Task tracking, completion status, and roadmap / 任務追蹤、完成狀態與路線圖
+- [TESTING.md](TESTING.md) - Testing strategy, commands, and best practices / 測試策略、指令與最佳實踐
+- [GIT_REMOTE_SETUP.md](GIT_REMOTE_SETUP.md) - Git remote setup guide / Git 遠端設定指南
+- [.agent_task_state.md](.agent_task_state.md) - Agent task state snapshot / Agent 任務狀態快照
+
+### docs/ Documents / docs 目錄文件
+
+- [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md) - Implementation phases and task breakdown / 實作階段與任務拆解
+- [docs/GO_MODULE_STRUCTURE.md](docs/GO_MODULE_STRUCTURE.md) - Go module and package structure / Go 模組與套件結構
+- [docs/ARCHITECTURE_ANALYSIS.md](docs/ARCHITECTURE_ANALYSIS.md) - Source architecture analysis (TS/Bun reference) / 原始架構分析（TS/Bun 參考）
+- [docs/GO_ARCHITECTURE.md](docs/GO_ARCHITECTURE.md) - Go architecture design and data flow / Go 架構設計與資料流
+- [docs/CORE_FEATURES.md](docs/CORE_FEATURES.md) - Core feature scope and priorities / 核心功能範圍與優先級
+- [docs/TECH_DECISIONS.md](docs/TECH_DECISIONS.md) - ADR-style technical decisions / ADR 形式技術決策
+
+### Documentation Maintenance Rules / 文件維護規則
+
+1. 若新增、重新命名或刪除任何 `.md` 檔案，必須同步更新本節「Documentation Index / 文件索引」。
+2. `README.md` 應保持為文件入口，所有重要說明文件需可從本檔案直接點擊進入。
+3. PR 若包含文件異動，需一併檢查連結有效性與簡介是否仍正確。
+4. 若內容狀態已變更（例如完成度、測試數字、版本），需同步更新對應文件（至少 `README.md`、`TODO.md`、`CHANGELOG.md`）。
+
+---
+
 ## Prerequisites / 先決條件
 
 - **Go 1.21 or higher / Go 1.21 或更高版本**
