@@ -228,7 +228,258 @@
 
 **Repository**: `git@github.com-chiisen:chiisen/cc-cli-go.git`
 
-感謝使用！如有問題或建議，歡迎提 Issue 或 PR。
+---
+
+## 🔮 未來優化方向 / Future Optimization Roadmap
+
+> **更新日期 / Update Date**: 2026-04-02
+
+### 🔴 高優先級 / High Priority (建議先做 ⭐)
+
+#### 1. 測試覆蓋率提升 / Test Coverage Improvement ⭐
+
+**目標**: 提升低覆蓋率模組至 80% 以上
+
+**當前狀態 / Current Status**:
+
+| 模組 / Module | 蓋率 / Coverage | 狀態 / Status |
+|--------------|----------------|--------------|
+| `cli` | 0% | ❌ 需補充 |
+| `compact` | 0% | ❌ 需補充 |
+| `errors` | 0% | ❌ 需補充 |
+| `query` | 0% | ❌ 需補充 |
+| `types` | 0% | ❌ 需補充 |
+| `tui` | 18.8% | ⚠️ 需提升 |
+| `api` | 44.2% | ⚠️ 需提升 |
+| `tools` (registry) | 0% | ❌ 需補充 |
+| `testutil` | 0% | ❌ 需補充 |
+
+**待實作 / Pending**:
+
+- [ ] CLI 命令測試 (root, run commands)
+- [ ] Query Engine 測試 (streaming, tool execution)
+- [ ] TUI 測試提升 (model, update, view)
+- [ ] API Client 測試提升 (mock scenarios)
+- [ ] Errors Package 測試 (error types, messages)
+- [ ] Compact Package 測試 (compaction logic)
+- [ ] Types Package 測試 (message, content types)
+
+**預估工時 / Est. Hours**: 4-6 小時
+
+---
+
+#### 2. CI/CD 自動化 / Automation Setup ⭐
+
+**目標**: 建構自動化測試與發布流程
+
+**當前狀態 / Current Status**: ❌ 尚未配置
+
+**待實作 / Pending**:
+
+- [ ] GitHub Actions Workflow
+  - [ ] Test automation (on push/PR)
+  - [ ] Build automation (multi-platform)
+  - [ ] Coverage report generation
+  - [ ] Release automation
+  
+- [ ] Makefile / Build Automation
+  - [ ] `make test` - 執行所有測試
+  - [ ] `make build` - 建構 binary
+  - [ ] `make coverage` - 生成覆蓋率報告
+  - [ ] `make lint` - 程式碼檢查
+  - [ ] `make clean` - 清理建構檔案
+  - [ ] `make install` - 安裝到系統
+  - [ ] `make release` - 發布新版本
+  
+- [ ] Linter Configuration
+  - [ ] golangci-lint setup
+  - [ ] Code style enforcement
+  
+- [ ] Release Process
+  - [ ] Version management
+  - [ ] CHANGELOG automation
+  - [ ] Binary releases (GitHub Releases)
+  - [ ] Cross-platform builds (darwin/linux/windows)
+
+**預估工時 / Est. Hours**: 2-3 小時
+
+**技術 / Tech**: GitHub Actions, Makefile, golangci-lint
+
+---
+
+### 🟡 中優先級 / Medium Priority
+
+#### 3. 效能優化 / Performance Optimization
+
+**目標**: 提升系統效能與資源使用效率
+
+**待實作 / Pending**:
+
+- [ ] API Client 連接池優化
+  - [ ] HTTP connection pooling
+  - [ ] Request retry mechanism
+  - [ ] Rate limiting handling
+  
+- [ ] Context Compaction 算法優化
+  - [ ] Token estimation accuracy
+  - [ ] Summary quality improvement
+  - [ ] Compaction trigger optimization
+  
+- [ ] TUI 渲染效能提升
+  - [ ] Message rendering optimization
+  - [ ] Viewport scrolling optimization
+  - [ ] Memory usage reduction
+  
+- [ ] Tool Execution 優化
+  - [ ] Parallel execution improvements
+  - [ ] Timeout handling
+  - [ ] Resource cleanup
+
+**預估工時 / Est. Hours**: 3-4 小時
+
+---
+
+#### 4. 文件完善 / Documentation Enhancement
+
+**目標**: 提供完整的使用與開發指南
+
+**待實作 / Pending**:
+
+- [ ] API 使用指南 / API Usage Guide
+  - [ ] API Client documentation
+  - [ ] Request/Response examples
+  - [ ] Error handling guide
+  
+- [ ] Tool 開發指南 / Tool Development Guide
+  - [ ] Tool interface explanation
+  - [ ] Tool implementation tutorial
+  - [ ] Best practices
+  
+- [ ] Architecture 深度說明 / Architecture Deep Dive
+  - [ ] System flow diagrams
+  - [ ] Design decisions explanation
+  - [ ] Extension points
+  
+- [ ] 使用者指南 / User Guide
+  - [ ] Installation instructions
+  - [ ] Configuration guide
+  - [ ] Common use cases
+  - [ ] Troubleshooting guide
+  
+- [ ] Contributing Guide
+  - [ ] Development setup
+  - [ ] Code style guide
+  - [ ] PR submission process
+
+**預估工時 / Est. Hours**: 2-3 小時
+
+---
+
+### 🟢 低優先級 / Low Priority (可選)
+
+#### 5. 功能增強 / Feature Enhancements
+
+**目標**: 新增進階功能以提升能力
+
+**待實作 / Pending**:
+
+- [ ] 新增工具 / Additional Tools
+  - [ ] WebFetch Tool - Fetch URLs
+  - [ ] WebSearch Tool - Web search integration
+  - [ ] TodoWrite Tool - Task tracking
+  - [ ] Agent Tool - Subagent spawning (複雜度高)
+  - [ ] NotebookEdit Tool - Jupyter notebook editing (低優先級)
+  
+- [ ] Markdown 渲染支援 / Markdown Rendering
+  - [ ] Markdown parser integration
+  - [ ] Code block rendering
+  - [ ] Table rendering
+  
+- [ ] Syntax Highlighting / Code Syntax Highlighting
+  - [ ] Chroma or similar library integration
+  - [ ] Multiple language support
+  - [ ] Theme customization
+  
+- [ ] Auto-completion / Input Auto-completion
+  - [ ] Command completion
+  - [ ] File path completion
+  - [ ] Tool name completion
+
+**預估工時 / Est. Hours**: 依功能而定
+
+---
+
+#### 6. 使用者體驗優化 / User Experience Improvements
+
+**目標**: 提升使用者介面與互動體驗
+
+**待實作 / Pending**:
+
+- [ ] TUI 界面美化 / TUI UI Beautification
+  - [ ] Color scheme improvements
+  - [ ] Border styling
+  - [ ] Animation effects
+  - [ ] Custom themes
+  
+- [ ] 錯誤提示友善化 / User-friendly Error Messages
+  - [ ] Error message categorization
+  - [ ] Suggested solutions
+  - [ ] Error severity indicators
+  
+- [ ] 進度條顯示 / Progress Indicators
+  - [ ] Loading progress bars
+  - [ ] Tool execution progress
+  - [ ] File operation progress
+  
+- [ ] 多語系支援 / Multi-language Support
+  - [ ] English interface
+  - [ ] Traditional Chinese interface
+  - [ ] Language switching
+  
+- [ ] 互動式設定 / Interactive Configuration
+  - [ ] First-run setup wizard
+  - [ ] Settings UI
+  - [ ] Configuration validation
+
+**預估工時 / Est. Hours**: 3-4 小時
+
+---
+
+### 📊 優化項目總覽 / Optimization Summary
+
+| 類別 / Category | 項目數 / Items | 預估工時 / Est. Hours | 優先級 / Priority |
+|----------------|---------------|---------------------|------------------|
+| 🔴 高優先級 | 2 大項 + 14 子項 | 6-9 小時 | ⭐⭐⭐ |
+| 🟡 中優先級 | 2 大項 + 17 子項 | 5-7 小時 | ⭐⭐ |
+| 🟢 低優先級 | 2 大項 + 19 子項 | 依功能而定 | ⭐ |
+| **總計** | **6 大項 + 50 子項** | **11-16+ 小時** | - |
+
+---
+
+### 💡 建議執行順序 / Recommended Execution Order
+
+**Phase 1 (立即執行)**:
+```
+1. 測試覆蓋率提升 (最影響程式碼品質信心)
+2. CI/CD 自動化 (最影響開發效率)
+```
+
+**Phase 2 (短期規劃)**:
+```
+3. Makefile 建立 (統一建構指令)
+4. 效能優化 (提升使用者體驗)
+```
+
+**Phase 3 (中期規劃)**:
+```
+5. 文件完善 (降低學習門檻)
+6. 使用者體驗優化 (提升產品品質)
+```
+
+**Phase 4 (長期規劃)**:
+```
+7. 功能增強 (視需求逐步添加)
+```
 
 ---
 
@@ -264,4 +515,4 @@ type Tool interface {
 
 ---
 
-*最後更新 / Last Updated: 2026-04-02*
+*最後更新 / Last Updated: 2026-04-02 (Added Optimization Roadmap)*
