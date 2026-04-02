@@ -9,6 +9,14 @@
 
 ### 新增功能 / Added
 
+#### 測試框架 / Testing Framework
+
+- **TESTING.md**: 完整測試策略文件，包含測試原則、工具、範例與最佳實踐。
+- **testutil Package**: 測試輔助工具 package，提供常用斷言與檔案系統測試工具。
+- **Write Tool Tests**: Write Tool 完整單元測試（覆蓋率 81.8%）。
+- **Permission System Tests**: Permission System 完整單元測試（覆蓋率 90.9%）。
+- **Session Storage Tests**: Session Storage 完整單元測試（覆蓋率 88.0%）。
+
 #### 工具系統 / Tools
 
 - **Write Tool**: 建立新檔案工具，僅允許建立新檔案（若檔案已存在則拒絕），支援自動建立父目錄。

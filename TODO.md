@@ -112,6 +112,17 @@
 
 ### 🟢 Phase 3: 進階功能 / Advanced Features (P1/P2 - 可選 / Optional)
 
+#### Testing 測試
+
+- [x] **Testing Framework / 測試框架** ✅
+  - 功能: Testing strategy and implementation / 測試策略與實作
+  - 實作位置: `TESTING.md`, `internal/testutil/`
+  - 特性:
+    - Write Tool Tests (81.8% coverage)
+    - Permission System Tests (90.9% coverage)
+    - Session Storage Tests (88.0% coverage)
+    - testutil package with helper functions
+
 #### Context Compaction 環境壓縮
 
 - [ ] **Context Compaction / 環境壓縮**
