@@ -11,6 +11,7 @@
 
 #### 文件 / Documentation
 
+- **AI Agent 協作規則**: 新增 `AGENTS.md` 與 `.codex/hooks.json`，整合 Graphify 知識圖譜導引與 AI 協作協定 (AACS)。
 - **README 文件索引**: 新增 `Documentation Index`，集中列出根目錄與 `docs/` 下所有 Markdown 文件連結與簡介。
 - **README 維護規則**: 新增 `Documentation Maintenance Rules`，規範 `.md` 異動時同步更新索引與核心文件一致性。
 - **TECH_DECISIONS 名詞解釋**: 新增 `名詞解釋 / Glossary` 章節，補充 ADR 相關術語與本專案實作對應。
