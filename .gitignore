@@ -56,6 +56,12 @@ secrets.json
 # Claude Code
 .claude/
 
+# Graphify outputs (keep only reports and graphs, ignore cache)
+graphify-out/cache/
+.graphify_*.json
+.graphify_*.txt
+.graphify_*.py
+
 # Build artifacts
 dist/
 build/
