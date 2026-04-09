@@ -404,6 +404,45 @@ The knowledge graph is designed for **incremental updates**. When you modify sou
 /graphify --update --mode deep
 ```
 
+#### ⚡ Using `/graphify` Skill in Claude Code / 在 Claude Code 中使用 `/graphify` Skill
+
+**Why `/graphify` instead of direct command?** / **為什麼用 `/graphify` 而不是直接命令？**
+
+The `/graphify` command is a **Skill** — a Claude Code extension that automates the entire 9-step knowledge graph pipeline in one invocation.
+
+`/graphify` 是一個 **Skill** — Claude Code 擴展，將整個 9 步知識圖表流程自動化為一個指令。
+
+**Available commands in Claude Code:**
+
+在 Claude Code 中可用的指令：
+
+```bash
+/graphify .                      # Full analysis of current directory / 完整分析當前目錄
+/graphify . --update             # Incremental update (only changed files) / 增量更新（只分析改變的檔案）
+/graphify . --update --mode deep # Deep semantic extraction / 深度語義提取
+```
+
+**How it works:**
+
+1. ✅ **Automatic installation** — Skill is auto-downloaded on first use from `~/.claude/skills/graphify/`
+   - **自動安裝** — 首次使用時自動下載至 `~/.claude/skills/graphify/`
+
+2. ✅ **One-command pipeline** — Executes all 9 steps (detection → extraction → clustering → visualization)
+   - **單一命令流程** — 執行所有 9 步（檢測 → 提取 → 聚類 → 可視化）
+
+3. ✅ **AI-friendly** — Perfect for agents to refresh architecture understanding after code changes
+   - **AI 友善** — 便於 Agent 在代碼改變後更新架構認知
+
+**Direct command alternative (not recommended for Claude Code):**
+
+直接命令方式（Claude Code 中不建議）：
+
+```bash
+python -m graphify . --mode deep
+```
+
+Use `/graphify` in Claude Code for the best experience. / 在 Claude Code 中使用 `/graphify` 以獲得最佳體驗。
+
 **Cache Strategy / 快取策略：**
 
 - **Cache location**: `graphify-out/cache/` (~370 KB)
