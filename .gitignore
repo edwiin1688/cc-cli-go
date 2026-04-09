@@ -65,3 +65,6 @@ graphify-out/cache/
 # Build artifacts
 dist/
 build/
+
+# Codex
+.codex/hooks.json
